@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* Enable dark mode via `.dark` class instead of system preference */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Theme tokens for custom colors and gradients */
+@theme {
+  /* Custom color token */
+  --color-rose-gold: #b76e79;
+  --color-teal: #0f766e;
+
+  /* Custom gradient background */
+  --bg-teal-rose-gradient: linear-gradient(
+    135deg,
+    var(--color-teal),
+    var(--color-rose-gold)
+  );
+}
